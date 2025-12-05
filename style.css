@@ -69,23 +69,67 @@ section {
     flex-direction: column;
     justify-content: center;
 }
+
 html {
     scroll-behavior: smooth;
 }
+
 .navbar {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    padding: 15px 30px;
+    background: #0d0d0d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     z-index: 9999;
+    border-bottom: 1px solid #222;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: #eee;
+    padding-top: 70px; /* cukup untuk navbar */
 }
 .navbar {
-    position: fixed;
+    position: sticky;
     top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10000;
+    z-index: 1000;
 }
-body {
-    padding-top: 100px;
+
+.navbar a.active,
+.navbar a:hover {
+    font-weight: 700;
+}
+
+/* Hero Section Improvement */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+/* Button */
+.btn {
+    padding: 12px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #007bff;
+    color: #fff;
+    transition: transform 0.25s ease, opacity 0.2s;
+}
+
+.btn:hover {
+    opacity: 0.85;
+    transform: translateY(-2px);
 }
