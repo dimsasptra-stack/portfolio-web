@@ -1,19 +1,91 @@
 body {
+    padding-top: 80px;
     font-family: Arial, sans-serif;
+    margin: 0;
     background: #111;
     color: #eee;
-    margin: 0;
-    padding: 20px;
+    text-align: center;
 }
 
-header, section {
-    margin-bottom: 40px;
+.hero {
+    padding: 60px 20px;
 }
 
-h1 {
-    color: #00eaff;
+.profile-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    display: block;
+    margin: 20px auto;
 }
 
-h2 {
-    color: #ffaa00;
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #00aaff;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-top: 15px;
+}
+
+.about {
+    padding: 40px 20px;
+    background: #222;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #0d0d0d;
+    position: sticky;
+    top: 0;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #eee;
+    font-weight: 600;
+}
+
+.navbar a:hover {
+    color: #00aaff;
+}
+
+section {
+    padding: 80px 20px;
+    min-height: 100vh; /* 1 layar penuh per section */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+html {
+    scroll-behavior: smooth;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+}
+body {
+    padding-top: 100px;
 }
